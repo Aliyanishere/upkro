@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.text-faded {
+  opacity: 0.6;
+}
+
+.fs-7 {
+  font-size: 14px;
+}
+
+.fs-8 {
+  font-size: 13px;
+}
+
+.fs-9 {
+  font-size: 12px;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-11 {
+  font-size: 8px;
+}
+
+.fs-12 {
+  font-size: 6px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+  position: relative;
+}
+
+.navbar {
+  background-color: black;
+  z-index: 1000;
+}
+
+.nav-link {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.829) !important;
+}
+
+.navbar-brand img {
+  width: 120px;
+}
+
+.btn {
+  border: 2px solid rgb(255,212,0) !important;
+  background-color: transparent !important;
+  border: transparent;
+  border-radius: 20px;
+  color: rgb(255,212,0) !important;
+  font-weight: bold;
+}
+
+.btn:hover{
+  background-color: rgb(255,212,0) !important;
+  color: black !important;
+}
+
+.main {
+  background-image: url('../images//bg2.png');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main video {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.main .child {
+  z-index: 1;
+}
+
+h1 {
+  color: #95bfff;
+}
+
+.progress {
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background: #2b2c31;
+  text-align: center;
+  line-height: 200px;
+  margin: 20px;
+}
+
+.progress .title {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: 500;
+}
+
+.progress .overlay {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #2b2c31;
+}
+
+.progress .left,
+.progress .right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 6px solid #ffffff;
+  border-radius: 100px 0px 0px 100px;
+  border-right: 0;
+  transform-origin: right;
+}
+
+.progress .left {
+  animation: load1 1s linear forwards;
+}
+
+.progress:nth-of-type(2) .right,
+.progress:nth-of-type(3) .right {
+  animation: load2 0.5s linear forwards 1s;
+}
+
+.progress:last-of-type .right,
+.progress:first-of-type .right {
+  animation: load3 0.8s linear forwards 1s;
+}
+
+@keyframes load1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes load2 {
+  0% {
+    z-index: 100;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    z-index: 100;
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes load3 {
+  0% {
+    z-index: 100;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    z-index: 100;
+    transform: rotate(315deg);
+  }
+}
+
+@media (max-width: 991px) {
+  .progress {
+    transform: scale(.7);
+  }
+}
+
+.pro-parrent {
+  background-color: #2B2C31;
+  border-radius: 15px;
+}
+
+.text-primary {
+  color: #95bfff !important;
+}
+
+.card {
+  background-color: black;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.tech_bg{
+  background-image: url('../images/Honeycomb2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boxes {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card-2 {
+  /* background-color: #262D37; */
+  /* box-shadow: 0px 0px 15px 4px #2D3541; */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.decore {
+  width: 100%;
+  position: relative;
+}
+
+.decore img {
+  width: 30%;
+  position: absolute;
+  left: 0;
+  top: -200px;
+  z-index: -1;
+}
+
+.diomand {
+  min-width: 90px;
+  min-height: 90px;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  background-image: linear-gradient(90deg, rgb(198,159,98), rgb(243, 200, 131));
+  padding: 3px;
+  transform: rotate(45deg);
+}
+
+.diomand div {
+  background-color: #191D26;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diomand span {
+  color: rgb(198,159,98);
+  font-size: 27px;
+  font-weight: 600;
+  transform: rotate(-45deg);
+}
+
+.card-bg {
+  background-image: url('../images/Honeycomb9.png');
+  background-size: 100% 100%;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.blue-bg {
+  background-color: #0D6EFD;
+}
+
+.rot{
+  border: 1px solid rgb(198,159,98);
+  margin: 30px;
+  transform: rotate(45deg);
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(198,159,98,0.1);
+}
+
+.fa-twitter, .fa-paper-plane, .fa-discord{
+  color: rgb(198,159,98);
+  transform: rotate(-45deg);
+}

@@ -58,11 +58,16 @@ function Web() {
                     </button>
                     <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link " aria-current="page" href="#about">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link " aria-current="page" href="#roadmap">ROADMAP</a></li>
+                            <li class="nav-item"><a class="nav-link " aria-current="page" href="#buy">HOW TO BUY</a></li>
+                            <li class="nav-item"><a class="nav-link " aria-current="page" href="#team">TEAM</a></li>
+                            <li class="nav-item"><a class="nav-link " aria-current="page" href="#faq">FAQ</a></li>
                             <Link to="/whitepaper">
-                                <li className="nav-item"><a className="nav-link " aria-current="page" href="#">WHITE PAPER</a></li>
+                                <li className="nav-item"><a className="nav-link " aria-current="page" href="#">WHITEPAPER</a></li>
                             </Link>
                             <Link to="/minting">
-                                <li className="nav-item"><a className="nav-link " aria-current="page" href="#">MINTING PAGE</a></li>
+                                <li className="nav-item"><a className="nav-link " aria-current="page" href="#">MINTING</a></li>
                             </Link>
                         </ul>
                         {/* <form className="d-flex"> */}
@@ -126,7 +131,7 @@ function Web() {
                 </div>
             </section>
 
-            <section className="d-flex align-items-center" style={{ minHeight: "100vh" }}>
+            <section id='about' className="d-flex align-items-center" style={{ minHeight: "100vh" }}>
                 <div className="container">
                     <div className="row mx-0">
                         <div className="col-lg-6 co-12 d-flex flex-column align-items-start" style={{ paddingTop: "105px" }}>
@@ -197,19 +202,6 @@ function Web() {
                 </div>
             </section>
 
-            <div className="container px-4 mb-4" style={{ minHeight: "80vh" }}>
-                <div className="card w-100  py-5 pb-0 d-flex flex-column align-items-center">
-                    <img src={boxes} className="boxes" alt="" />
-                    <span style={{ color: "rgb(255,212,0)" }}>Our Team</span>
-                    <span className="fs-2 fw-600" style={{ color: "rgb(255,212,0)", display: "flex", alignItems: "center", justifyContent: "center" }}>Anon with Trusted Reputation</span>
-                    <div className='tem_mem mt-4'>
-                        <img src={test1} alt='' />
-                        <img src={test2} alt='' />
-                        <img src={test3} alt='' />
-                    </div>
-                </div>
-            </div>
-
             <section className="d-flex align-items-center justify-content-center" style={{ minHeight: "40vh" }}>
                 <div className="container d-flex flex-column align-items-center">
                     <span className="fs-2 fw-600" style={{ color: "rgb(255,212,0)" }}>As Seen On</span>
@@ -265,7 +257,7 @@ function Web() {
                 </div>
             </section>
 
-            <div className="container px-4 mb-5" style={{ minHeight: "100vh" }}>
+            <div id='roadmap' className="container px-4 mb-5" style={{ minHeight: "100vh" }}>
                 <div className="card w-100 card-bg py-5 pb-0 d-flex flex-column align-items-center">
                     <img src={boxes} className="boxes" alt="" />
                     <span style={{ color: "rgb(255,212,0)" }}>How we move</span>
@@ -358,7 +350,7 @@ function Web() {
                 <img src={decore} alt="" />
             </div>
 
-            <section className="d-flex align-items-center my-5">
+            <section id='buy' className="d-flex align-items-center my-5">
                 <div className="">
                     <div className="row mx-0">
                         <div className="col-lg-6 py-4 co-12 d-flex align-items-center  justify-content-center ">
@@ -384,7 +376,20 @@ function Web() {
                 </div>
             </section>
 
-            <span className="d-flex justify-content-center align-items-center fs-2 fw-600" style={{ color: "rgb(255,212,0)" }}>FAQ</span>
+            <div id='team' className="container px-4 mb-4" style={{ minHeight: "80vh" }}>
+                <div className="card w-100  py-5 pb-0 d-flex flex-column align-items-center">
+                    <img src={boxes} className="boxes" alt="" />
+                    <span style={{ color: "rgb(255,212,0)" }}>Our Team</span>
+                    <span className="fs-2 fw-600" style={{ color: "rgb(255,212,0)", display: "flex", alignItems: "center", justifyContent: "center" }}>Anon with Trusted Reputation</span>
+                    <div className='tem_mem mt-4'>
+                        <img src={test1} alt='' />
+                        <img src={test2} alt='' />
+                        <img src={test3} alt='' />
+                    </div>
+                </div>
+            </div>
+
+            <span id='faq' className="d-flex justify-content-center align-items-center fs-2 fw-600" style={{ color: "rgb(255,212,0)" }}>FAQ</span>
             <section className="d-flex col-12 col-lg-12 justify-content-center align-items-center my-5">
                 <Accordion defaultActiveKey="0">
                     <Card className="m-0 mb-3 acc-card">

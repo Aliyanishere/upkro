@@ -95,8 +95,7 @@ body {
 }
 
 .nav-link:hover {
-  text-decoration: underline;
-  font-weight: bold;
+  text-decoration: none;
 }
 
 .navbar-brand img {
